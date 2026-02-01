@@ -1,0 +1,65 @@
+/* Reset + box model rule */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Layout wrapper */
+.layout {
+  border: 2px solid #ddd;
+  margin: 20px;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #e5e7eb;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 220px;
+}
+
+/* Main content */
+.main {
+  padding: 20px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+/* Cards */
+.cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #bbb;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: white;
+}
+
+
+/* Responsive — mobile layout */
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
