@@ -1,3 +1,4 @@
+
 /* Reset + box model rule */
 * {
   box-sizing: border-box;
@@ -20,6 +21,7 @@
   margin: 20px;
   display: flex;
 }
+
 
 /* Sidebar */
 .sidebar {
@@ -45,28 +47,15 @@
 }
 
 .card {
-  position: relative;
   border: 1px solid #bbb;
   padding: 16px;
   margin-bottom: 12px;
   background: white;
 }
 
-.badge {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: red;
-  color: white;
-  padding: 4px 8px;
-  font-size: 12px;
-}
-
-
 
 
 /* Responsive — mobile layout */
-
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
