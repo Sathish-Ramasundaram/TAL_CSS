@@ -36,7 +36,7 @@ gap: 16px
 Spacing between grid items
 Much cleaner than margins.
 
-14. Replace the grid line with this:
+14. Replace the grid line with this: ----------------------------------------------
 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
 

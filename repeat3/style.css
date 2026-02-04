@@ -1,3 +1,4 @@
+
 /* Reset + box model rule */
 * {
   box-sizing: border-box;
@@ -12,21 +13,13 @@
   color: white;
   padding: 20px;
   font-size: 24px;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 }
-
 
 /* Layout wrapper */
 .layout {
   border: 2px solid #ddd;
   margin: 20px;
   display: flex;
-  margin-top: 100px; /* add this */
 }
 
 /* Sidebar */
@@ -34,7 +27,7 @@
   background: #e5e7eb;
   padding: 20px;
   border: 1px solid #ccc;
-  width: 220px;
+  width: 220px;   
 }
 
 /* Main content */
@@ -50,19 +43,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
+  position: relative;
 }
 
 .card {
-  position: relative;
+    position: relative;
   border: 1px solid #bbb;
   padding: 16px;
   margin-bottom: 12px;
   background: white;
 }
 
+
 .badge {
   position: absolute;
-  top: 8px;
+  top: 0px;
   right: 8px;
   background: red;
   color: white;
@@ -72,15 +67,14 @@
 
 
 
-
 /* Responsive — mobile layout */
 
 @media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
+    .layout {
+        flex-direction: column;
+    }
 
-  .sidebar {
-    width: 100%;
-  }
+    .sidebar {
+        width: 100%;
+    }
 }

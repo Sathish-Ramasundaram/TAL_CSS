@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Default: content-box */
+    .content-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid red;
+      box-sizing: content-box; /* default */
+      background-color: lightyellow;
+      margin: 10px;
+    }
+
+    /* With border-box */
+    .border-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid blue;
+      box-sizing: border-box;
+      background-color: lightcyan;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+  </div>
+  <div class="border-box">Border-box
+    Border-box
+    Border-box
+    Border-box
+    Border-box
+    Border-box
+  </div>
+</body>
+</html>

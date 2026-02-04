@@ -116,3 +116,59 @@ Border - Outer box line
 
 - Test
 
+box-sizing: border-box;
+
+By default (content-box) → the width and height apply only to the content area. Padding and border are added outside, so the element grows bigger than the size you set.
+
+With border-box → the width and height apply to the entire box (content + padding + border). The content area shrinks to fit, so the element stays exactly the size you set.
+
+For example: 
+
+```
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Default: content-box */
+    .content-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid red;
+      box-sizing: content-box; /* default */
+      background-color: lightyellow;
+      margin: 10px;
+    }
+
+    /* With border-box */
+    .border-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid blue;
+      box-sizing: border-box;
+      background-color: lightcyan;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+    Content-box (default)
+  </div>
+  <div class="border-box">Border-box
+    Border-box
+    Border-box
+    Border-box
+    Border-box
+    Border-box
+  </div>
+</body>
+</html>
+
+```

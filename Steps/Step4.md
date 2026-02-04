@@ -56,19 +56,16 @@ position controls how an element is placed on the page and what it is positioned
 
 Main values:
 
-position: static  (default)
+position: static  (default) - No Movement allowed
 position: relative
 position: absolute
 position: fixed
 position: sticky
 
 
-
 position: relative
-✅ Meaning (simple words)
-
-The element stays in normal layout
-BUT you can move it slightly from its original spot.
+- The element stays in normal layout
+- BUT you can move it slightly from its original spot.
 
 It still keeps its original space.
 
@@ -94,10 +91,9 @@ Think:
 
 
 position: absolute
-✅ Meaning (simple words)
 
-The element is removed from normal layout
-It floats and is positioned using top/left/right/bottom.
+- The element is removed from normal layout
+- It floats and is positioned using top/left/right/bottom.
 
 It does NOT keep its original space.
 
@@ -110,23 +106,16 @@ Example:
 }
 
 
-
 Now the card:
-
 Floats
-
 Other elements ignore it
-
 Positioned exactly by coordinates
-
 Think:
 
 👉 “Take me out — I will float exactly here”
 
 5. Let’s apply this to your dashboard cards.
-
 Goal:
-
 Show a small red badge on a card corner.
 
 Make card relative: 
@@ -187,10 +176,54 @@ Using absolute without setting parent to relative.
 Then element jumps to page corner — confusing 😄
 
 
-6. 
-7. 
-8. 
-9. 
+6. position: fixed
+Fixed = stick to the screen, not the page
+It ignores scrolling
+It stays at same screen position always
+
+7. update your header
+
+.header {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+8. Add spacing because fixed removes layout space
+Since fixed elements don’t keep their original space, your content will slide under the header.
+So add margin to layout:
+
+.layout {
+  border: 2px solid #ddd;
+  margin: 20px;
+  display: flex;
+  margin-top: 100px; /* add this */
+}
+
+9. Test: 
+
+Tricky part. Cart will go over the header. 
+Why? CSS does this:
+
+👉 Removes the header from normal layout flow
+👉 It no longer occupies vertical space
+👉 Other elements behave like the header is NOT there
+
+Add z-index (best practice)
+
+Fixed elements should usually sit above content.
+
+.header {
+  z-index: 1000;
+}
+
+Note: if you put z-index: 2000 in card, then card will go over again. 
 10. 
 11. 
 12. 

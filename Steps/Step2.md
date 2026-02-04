@@ -36,7 +36,7 @@ To:
   background: #e5e7eb;
   padding: 20px;
   border: 1px solid #ccc;
-  width: 220px;
+  width: 220px;                   <-------
 }
 
 
