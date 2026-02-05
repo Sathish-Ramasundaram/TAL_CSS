@@ -39,6 +39,16 @@ Much cleaner than margins.
 14. Replace the grid line with this: ----------------------------------------------
 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
+auto-fit
+Instead of a fixed number, the browser automatically fits as many columns as possible into the available space.
+If there’s extra space, columns stretch to fill it.
+If space is tight, fewer columns are shown.
+
+minmax(180px, 1fr)
+Defines the minimum and maximum width of each column.
+180px → column can’t shrink smaller than 180px.
+1fr → column can grow to take up available free space (fractional unit).
+
 
 15. Test:
 

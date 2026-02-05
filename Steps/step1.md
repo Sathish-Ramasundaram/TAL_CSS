@@ -55,6 +55,11 @@ borders
 background colors
 box sizing
 
+Note: 
+Box-Sizing and the Box Model
+Default (content-box) → width/height apply only to content; padding and border add extra size.
+border-box → width/height include content + padding + border; element stays fixed at the size you set.
+
 3. create style.css
 
 type nul > style.css
@@ -172,3 +177,19 @@ For example:
 </html>
 
 ```
+
+---
+
+px stands for CSS pixel, not necessarily the tiny dot on your screen.
+
+div { width: 100px; height: 100px; background: lightblue; }
+This creates a square that is 100 CSS pixels wide and tall.
+On a standard screen, it looks like 100 physical pixels.
+On a Retina screen, the browser uses more hardware pixels to render it, but visually it’s still the same size.
+
+px is a fixed unit → good for precise control (like borders, icons).
+Relative units (%, em, rem, vh, vw) → better for responsive design.
+
+Example difference:
+width: 200px; → always 200 CSS pixels wide.
+width: 50%; → adjusts based on parent width.

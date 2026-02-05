@@ -29,6 +29,8 @@ paste this at the bottom:
 
 ```
 
+(max-width: 768px) → The condition: it targets screens that are 768px wide or smaller.
+
 update index.html
 inside head
 
@@ -206,6 +208,9 @@ So add margin to layout:
   margin-top: 100px; /* add this */
 }
 
+margin-top: 100px; /* add this */
+To push elements down from the top of the page or from other elements.
+
 9. Test: 
 
 Tricky part. Cart will go over the header. 
@@ -224,47 +229,4 @@ Fixed elements should usually sit above content.
 }
 
 Note: if you put z-index: 2000 in card, then card will go over again. 
-10. 
-11. 
-12. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24.  
-25. 
-26. 
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
-33. 
-34. 
-35. 
-36. 
-37. 
-38. 
-39. 
-40. 
-41. 
-42. 
-43. 
-44. 
-45. 
-46. 
-47. 
-48. 
-49. 
-50.  
-51. 
-52. 
 
