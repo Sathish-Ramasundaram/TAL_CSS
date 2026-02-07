@@ -193,22 +193,3 @@ Relative units (%, em, rem, vh, vw) → better for responsive design.
 Example difference:
 width: 200px; → always 200 CSS pixels wide.
 width: 50%; → adjusts based on parent width.
-
---------------------------------------------
-
-Add this footer: 
-
-HTML:
-Just before body closure:  (This position is best choise for footer)
-        <footer class="footer">
-            Footer
-        </footer>
-
-
-style: 
-.footer {
-  background: #1f2937;
-  color: white;
-  padding: 20px;
-  font-size: 24px;
-}

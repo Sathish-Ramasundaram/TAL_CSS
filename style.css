@@ -37,6 +37,19 @@
   width: 220px;
 }
 
+.company-logo {
+  position: sticky;
+  top: 69px; /* distance from top of sidebar */
+  width: 180px;
+  height: 100px;
+  background: #4b5563; /* placeholder rectangle */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* Main content */
 .main {
   padding: 20px;
@@ -70,7 +83,13 @@
   font-size: 12px;
 }
 
-
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
 
 
 /* Responsive — mobile layout */
@@ -82,5 +101,10 @@
 
   .sidebar {
     width: 100%;
+  }
+
+  .company-logo { 
+    position: static; /* no sticky */ 
+    margin: 0 auto; /* center logo if needed */
   }
 }

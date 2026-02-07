@@ -1,19 +1,16 @@
-
-/* Reset + box model rule */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
 .header {
   background: #1f2937;
   color: white;
   padding: 20px;
   font-size: 24px;
 }
+
 
 /* Layout wrapper */
 .layout {
@@ -27,7 +24,7 @@
   background: #e5e7eb;
   padding: 20px;
   border: 1px solid #ccc;
-  width: 220px;   
+  width: 220px;
 }
 
 /* Main content */
@@ -40,41 +37,34 @@
 /* Cards */
 .cards {
   margin-top: 20px;
-  display: grid;
+    display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
-  position: relative;
 }
 
 .card {
-    position: relative;
   border: 1px solid #bbb;
   padding: 16px;
   margin-bottom: 12px;
   background: white;
 }
 
-
-.badge {
-  position: absolute;
-  top: 0px;
-  right: 8px;
-  background: red;
+/* Footer */
+.footer {
+  background: #1f2937;
   color: white;
-  padding: 4px 8px;
-  font-size: 12px;
+  padding: 20px;
+  font-size: 24px;
 }
 
 
-
 /* Responsive — mobile layout */
-
 @media (max-width: 768px) {
-    .layout {
-        flex-direction: column;
-    }
+  .layout {
+    flex-direction: column;
+  }
 
-    .sidebar {
-        width: 100%;
-    }
+  .sidebar {
+    width: 100%;
+  }
 }
